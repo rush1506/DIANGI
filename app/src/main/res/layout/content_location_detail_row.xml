@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_display_result_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/content_location_detail_row_thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/content_location_detail_row_location_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/content_location_detail_row_thumbnail"
+        android:gravity="left"
+        android:text="Location name"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/content_location_detail_row_location_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_location_detail_row_location_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/content_location_detail_row_thumbnail"
+        android:text="Address"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/content_location_detail_row_location_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_location_detail_row_location_address"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/content_location_detail_row_thumbnail"
+        android:text="Rating: "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/content_location_detail_row_location_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_location_detail_row_location_address"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/content_location_detail_row_location_rating"
+        android:text="Price:"
+        android:textSize="18sp" />
+
+</RelativeLayout>
